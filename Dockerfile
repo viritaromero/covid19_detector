@@ -11,7 +11,7 @@ RUN pip install --no-cache-dir -r requirements.txt --upgrade
 
 COPY app app/
 
-RUN python app/server.py
+RUN python app/app.py
 
 EXPOSE 5042
 
