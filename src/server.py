@@ -10,8 +10,6 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-pip uninstall -y Pillow
-pip install Pillow==5.3.0
 export_file_url = 'https://drive.google.com/uc?export=download&id=1Hs7OBsQzV3fVf4PLeM_h2o43JyQIIeKv'
 export_file_name = 'model.pkl'
 
