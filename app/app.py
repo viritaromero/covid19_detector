@@ -9,8 +9,7 @@ from starlette.applications import Starlette
 from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
-from flask import Flask
-app = Flask(__name__)
+
 
 export_file_url = 'https://drive.google.com/uc?export=download&id=1Hs7OBsQzV3fVf4PLeM_h2o43JyQIIeKv'
 export_file_name = 'model.pkl'
@@ -51,6 +50,8 @@ tasks = [asyncio.ensure_future(setup_learner())]
 learn = loop.run_until_complete(asyncio.gather(*tasks))[0]
 loop.close()
 
+from flask import Flask
+app = Flask(__name__)
 
 @app.route('/')
 async def homepage(request):
