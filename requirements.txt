@@ -4,7 +4,8 @@ torch
 torchvision
 fastai
 starlette
-gunicorn==19.9.0
+Flask
+Gunicorn
 uvicorn==0.3.32
 python-multipart
 aiofiles
