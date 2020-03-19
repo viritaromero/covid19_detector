@@ -1,10 +1,10 @@
 numpy
-torchvision>=0.5.0
-pytorch==1.4.0
+Pillow!=5.1.0
+torch
+torchvision
 fastai
 starlette
 uvicorn==0.3.32
 python-multipart
 aiofiles
 aiohttp
-Pillow==5.3.0
